@@ -8,6 +8,45 @@ body {
   display: block;
 }
 
+.vektorgrafika-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.vektorgrafika-gallery img {
+  /*max-width: min(28%, 180px);*/
+  max-height: 480px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.site-footer {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: none;
+  margin: 2rem 0 0;
+  padding: 1rem 1.25rem;
+  text-align: center;
+  font-size: 0.9rem;
+  border-radius: 0;
+  background: #414833;
+  color: #fff;
+}
+
+.site-footer a {
+  color: inherit;
+}
+
+.site-footer a:hover,
+.site-footer a:focus-visible {
+  color: #7f5539;
+}
+
 .linija {
   background-color: #656d4a;
   width: 100%;
@@ -25,14 +64,14 @@ body {
   gap: 0.5rem 1.5rem;
   min-height: 3rem;
   padding: 0.5rem 1rem;
-  background: #000;
+  background: #414833;
   font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
   font-size: 0.95rem;
   letter-spacing: 0.02em;
 }
 
 .site-nav__brand {
-  color: #fff;
+  color: #ffffff;
   margin-right: auto;
 }
 
@@ -67,7 +106,7 @@ body {
 .site-nav__list > li > a:focus-visible,
 .site-nav__trigger:hover,
 .site-nav__trigger:focus-visible {
-  background: #c0c0c0;
+  background: #ffffff;
   color: #000;
   outline: none;
 }
