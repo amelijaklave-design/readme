@@ -1,5 +1,5 @@
 body {
-  background: white;
+  background: #ede0d4;
 }
 
 .hero-img {
@@ -8,7 +8,13 @@ body {
   display: block;
 }
 
-/* ——— vienkārša melnā josla ar izkrītošo izvēlni ——— */
+.linija {
+  background-color: #656d4a;
+  width: 100%;
+  height: 2px;
+}
+
+/* ——— josla ar izkrītošo izvēlni ——— */
 .site-nav {
   position: sticky;
   top: 0;
