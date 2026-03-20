@@ -19,7 +19,7 @@ body {
 
 .vektorgrafika-gallery img {
   /*max-width: min(28%, 180px);*/
-  max-height: 480px;
+  max-height: 350px;
   width: auto;
   height: auto;
   object-fit: contain;

@@ -1,0 +1,66 @@
+<!DOCTYPE html> 
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Forma</title>
+<link rel="stylesheet" href="mansStils.css">
+<style>
+body {
+  background: linear-gradient(rgba(237, 224, 212, 0.78), rgba(237, 224, 212, 0.78)), url("Images/background.avif") center / cover no-repeat;
+  min-height: 100vh;
+}
+</style>
+</head>
+<body>
+    
+    <div class="site-nav">
+  <span class="site-nav__brand">Datorikas portfolio</span>
+  <nav class="site-nav__menu" aria-label="Galvenā navigācija">
+  <ul class="site-nav__list">
+    <li><a href="index.html">Sākums</a></li>
+    <li class="site-nav__dropdown">
+      <button type="button" class="site-nav__trigger" aria-expanded="false" aria-haspopup="true" aria-controls="nav-attelu">
+        Attēlu apstrāde <span class="site-nav__caret" aria-hidden="true"></span>
+      </button>
+      <ul class="site-nav__sub" id="nav-attelu" role="menu">
+        <li role="none"><a href="#rakst" role="menuitem">Rastrgrafika</a></li>
+        <li role="none"><a href="#vekt" role="menuitem">Vektorgrafika</a></li>
+      </ul>
+    </li>
+    <li><a href="#tekst">Teksta apstrāde</a></li>
+    <li><a href="#izklaj">Izklājlapas</a></li>
+    <li><a href="#video">Video</a></li>
+    <li><a href="otrais.html">Divfaktoru autentifikācija</a></li>
+  </ul>
+  </nav>
+</div>
+    <h1>Formas un ievadlauku piemērs</h1>
+    <form>
+        <p>Šodienas datums <input name="datums"></p>
+        <p>Ja gribi uzzināt šodienas datumu, spied pogu DATUMS 
+            <input onclick="datums.value=new Date();" name="poga" value="DATUMS" type="button">
+        </p>
+        <p>Ja gribi izdzēst datuma lodziņa saturu, spied pogu RESET
+            <input value="RESET" type="reset">
+        </p>
+    </form>
+    <form>
+        <div>1.skaitlis<input type="text" name="sk1"> </div><br>
+        <div>
+            <input value="+" name="plus" onclick="rez.value = parseFloat(sk1.value) + parseFloat(sk2.value)" type="button">
+            <input value="-" name="minus" onclick="rez.value=sk1.value-sk2.value" type="button">
+            <input value="X" name="reiz" onclick="rez.value=sk1.value*sk2.value" type="button">
+            <input value="/" name="dalit" type="button" onclick="rez.value=sk1.value/sk2.value">
+            <input type="reset" value="RESET">
+        </div>
+        <br>
+        <div>2.skaitlis<input type="text" name="sk2"> </div>
+        <br>
+        <div>Rezultāts<input name="rez"> </div>
+    </form>
+<footer class="site-footer">
+    <p><a href="index.html">Sākums</a> · <a href="dzer.html">Dzer</a> · <a href="dzerdaudz.html">Dzer daudz</a> · <a href="forma.html">Forma</a> · <a href="skola.html">Skola</a> · <a href="baiti.html">Baiti</a></p>
+</footer>
+</body>
+</html>
