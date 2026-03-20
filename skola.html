@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Skola</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+table, th, td {
+  border:1px solid black;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+<header>
+  <h2>Rīgas Valsts 1. ģimnāzija</h2>
+</header>
+
+<section>
+  <nav>
+      <h2>Satura rādītājs</h2>
+    <ol>
+      <li><a href="#vest">Vēsture</a></li>
+      <li><a href="#snm">Skolas nosaukumu maiņas</a></li>
+      <li><a href="#zsv">Zināmie skolas vaditāji (1229—1804)</a></li>
+      <li><a href="#abs">Skolas absolventi</a></li>
+
+    </ol>
+  </nav>
+  
+  <article>
+      <h2 id="vest">Vēsture</h2> 
+      <p>Rīgas Valsts 1. ģimnāzija (saīsinājumā RV1Ģ vai RV1.ģ) ir vispārējās pamata un vidējās izglītības iestāde Rīgā. Tā ir pilsētas senākā skola. Ģimnāzija specializējas matemātikas un valodu padziļinātā apgūšanā. Mācības šajā skolā notiek latviešu valodā. Kopš 1996. gada ģimnāzija piedalās Starptautiskā bakalaurāta mācību programmas realizācijas projektā. Skolai kā pirmajai Latvijā dibināta absolventu un draugu biedrība ar mērķi finansiāli atbalstīt skolu. Lai iegūtu vietu skolā, ir jāiztur matemātikas konkurss, kurā uz vienu vietu pretendē vairāki skolēni. 9. klases noslēgumā skolēniem jāiztur vēl viens matemātikas konkurss, lai saglabātu vietu skolā. 2019. gadā konkursam uz 10. klasi pieteicās vairāk nekā tūkstoš Latvijas 9. klašu skolēnu.</p>
+      <p>Skolas pastāvēšanai iespējams izsekot līdz pat 1211. gadam, kad bīskaps Alberts Rīgā nodibināja Svētās Marijas katedrāli un pie tās — Livonijas bīskapijas domkapitula klosteri. Skola atradās Doma baznīcas krustejā un bija paredzēta katoļu garīdznieku sagatavošanai. Zviedru laikā ar Zviedrijas karaļa Gustava II Ādolfa lēmumu 1631. gadā uz Doma skolas bāzes izveidoja Rīgas Akadēmisko ģimnāziju. 1804. gadā izglītības reformu laikā Domskolu pārveidoja par Rīgas apriņķa galveno mācību iestādi — Rīgas 1. apriņķa skolu, 1861. gadā — par Rīgas reālģimnāziju, kurā mācījās arī Vilhelms Ostvalds (1864—1871), bet 1873. gadā — par Rīgas Pilsētas ģimnāziju. 1874. gadā pēc Rīgas galvenā arhitekta Johana Daniela Felsko projekta tika uzcelta tagadējā skolas ēka Raiņa bulvārī 8. Vecā skolas ēka pie Doma baznīcas tika nojaukta 1888. gadā, būvējot pilsētas muzeju. Rusifikācijas periodā 1894. gadā skolu pārveidoja par klasisko ģimnāziju, vēlāk — par valsts ģimnāziju (Государственная гимназия) ar krievu mācību valodu. 1919. gadā Stučkas valdība pārdēvēja to par Rīgas 1. vidusskolu ar latviešu mācību valodu, Latvijas Republikas laikā tika atjaunota Rīgas pilsētas 1. ģimnāzija. Pēc Latvijas okupācijas skolu atkal pārdēvēja par Rīgas 1. vidusskolu un 1944. gadā nosauca tās pirmā direktora Leona Paegles vārdā. Pēc Latvijas Republikas atjaunošanas skola atguva Rīgas 1. ģimnāzijas vārdu, bet kopš 1996. gada tiek dēvēta par Rīgas Valsts 1. ģimnāziju. Meklējot datus par skolas vēsturi, jāņem vērā, ka laika posmā, kad skolu sauca par Rīgas pilsētas 1. ģimnāziju, pastāvēja arī Rīgas Valsts 1. ģimnāzija, kas nav saistīta ar šajā rakstā minēto skolu.</p>
+
+      <h2 id="snm">Skolas nosaukumu maiņas.</h2>
+      <p>Pēc Latvijas Valsts arhīva datiem, Rīgas Valsts 1. ģimnāzija piedzīvojusi vismaz 15 dažādus nosaukumus:</p>
+      <ul>
+          <li>1211.—1528. — Domkapitula klostera skola</li>
+<li>1528.—1631. — Rīgas pilsētas Domskola</li>
+<li>1631.—1710. — Rīgas Akadēmiskā ģimnāzija</li>
+<li>1711.—1804. — Rīgas Domskola (klasiskā ģimnāzija)</li>
+<li>1804.—1860. — Rīgas 1. apriņķa skola</li>
+<li>1861.—1873. — Rīgas Reālģimnāzija</li>
+<li>1873.—1894. — Rīgas Pilsētas ģimnāzija ar reālskolas un ģimnāzijas klasēm</li>
+<li>1894.—1895. — 8 klašu klasiskā ģimnāzija</li>
+<li>1896.—1919. — Valsts ģimnāzija</li>
+<li>1919.—1920. — 1. vidusskola</li>
+<li>1920.—1940. — Rīgas pilsētas 1. ģimnāzija</li>
+<li>1940.—1944. — Rīgas 1. vidusskola</li>
+<li>1944.—1990. — Ar Darba Sarkanā Karoga ordeni apbalvotā Rīgas L. Paegles 1. vidusskola</li>
+<li>1990.—1996. — Rīgas 1. ģimnāzija</li>
+<li>1996.—pašlaik — Rīgas Valsts 1. ģimnāzija</li></ul>
+
+      <h2 id="zsv">Zināmie skolas vadītāji (1229—1804)</h2>
+      <table style="width:100%">
+<tr>
+    <th>ap 1239.</th>
+    <th>mācību pārzinis (scholasticus) Domkapitula kanoniķis Heinrihs</th>
+</tr>
+<tr>
+    <th>1528.—1538.</th>
+    <th>rektors Jakobs Batuss (Jacobus Battus, miris 1546)</th>
+</tr>
+<tr>
+    <th>no 1538.</th>
+    <th>rektors Retgers Pistorijs (Bekers)</th>
+</tr>
+<tr>
+    <th>1554.—1561.</th>
+    <th>rektors Hermanis Vilkens (Vilikinds, Vitekinds)</th>
+</tr>
+<tr>
+    <th>ap 1576.</th>
+    <th>rektors Georgs Marsovs</th>
+</tr>
+<tr>
+    <th>1579.—1589.</th>
+    <th>rektors Heinrihs Mellers</th>
+</tr>
+<tr>
+    <th>1589.—1596.</th>
+    <th>rektors un inspektors Johans Rīvijs</th>
+</tr>
+<tr>
+    <th>no 1631.</th>
+    <th>ģimnāzijas inspektors Hermanis Samsons</th>
+</tr>
+<tr>
+    <th>no 1669.</th>
+    <th>rektors Georgs Lauterbahs</th>
+</tr>
+<tr>
+    <th>no 1681.</th>
+    <th>rektors Mihaels Pinsderfers (Pinsdörffer)</th>
+</tr>
+<tr>
+    <th>1755.—1765.</th>
+    <th>rektors un inspektors Johans Gothelfs Lindners</th>
+</tr>
+<tr>
+    <th>1765.—1780.</th>
+    <th>rektors Gotlībs Šlēgels</th>
+</tr>
+<tr>
+    <th>1780.—1787.</th>
+    <th>rektors Karls Filips Mihaels Snells</th>
+</tr>
+<tr>
+    <th>no 1788.</th>
+    <th>rektors Kārlis Gotlobs Zontāgs</th>
+</tr>
+<tr>
+    <th>līdz 1804.</th>
+    <th>rektors Johans Augusts Albanuss</th>
+</tr></table>
+
+<h2 id="abs">Skolas absolventi.</h2>
+Tomass Dukurs, Valters Frīdenbergs, Toms Skujiņš, Daina Taimiņa
+<a href="https://www.literatura.lv/personas/rainis"><h3>Rainis</h3></a>
+<h4>Personiska informācija</h4>
+<p>Bērnību unskolas brīvdienas Rainis aizvadīja vairākās Augškurzemes un Latgales muižās – Tadenavā, Randenē, Berķenelē (Berkenhēgenā), Vasiļovā un Jasmuižā – kuras nomā viņa vecāki. Bērnībā saukts par Žaniņu, viņš Tadenavā pavada pirmos četrus mūža gadus. Nākamais dzīves posms paiet Randenes muižā Latgalē, kur Pliekšānu ģimene apmetas vieglāku nomas noteikumu dēļ. Kad Rainis ir aptuveni septiņus gadus vecs, Pliekšānu ģimene pārceļas uz netālo Berkenhāgenes muižu. Bērnības vērojumi un atmiņas ietvertas autobiogrāfiskajā epā "Saules gadi" (1925). Dzejnieka tēvs Krišjānis Pliekšāns ir savam laikam moderns lauksaimnieks, materiāli labi situēts cilvēks. Pateicoties uzņēmīgajam raksturam un praktiskajām dotībām, viņš neatlaidīgi vairo dzimtas turību jau kopš klaušu laikiem. Respektējama arī ir viņa autoritāte un stāvoklis vietējā latviešu sabiedrībā. Krišjāni Pliekšānu tur pazīst kā vācu muižnieku un baznīcas pretinieku, kā laikmeta progresīvo centienu, arī nacionālās kustības atbalstītāju. Māte Dārta Pliekšāne bijusi laba audēja un teicama tautas dziesmu zinātāja. Ģimenē bijuši pieci bērni, no kuriem divi vecākie brāļi miruši, vecākā māsa –Līze, jaunākā – Dora (precējusies Stučka).</p>
+<p>1894: Rainis iepazinās ar nākamo sievu Aspaziju.</p>
+<p>1897, dec.: laulības ar Aspaziju.</p>
+<h4>Profesionālā darbība</h4>
+<h5>LITERĀRĀ DARBĪBA</h5>
+<p>1895: pirmā literārā publikācija – dzejolis "Aukstā dvēsele, lepnā dvēsele" ar parakstu J. Reinis laikrakstā "Dienas Lapa" (1./ 13. novembrī); "Dienas Lapas" pielikumā 11./ 23. novembrī – dzejolis "Dziļākās domas" ar parakstu J. Rainis.</p>
+<h5>LITERĀRIE DARBI</h5>
+<h6>Dzejoļu krājumi</h6>
+1903: "Tālas noskaņas zilā vakarā".
+1905: "Vētras sēja".
+1909: "Klusā grāmata".
+1912: "Gals un sākums".
+1920–1925: "Dagdas piecas skiču burtnīcas" ("Addio bella!", "Čūsku vārdi", "Uz mājām" (1920), "Sudrabota gaisma" (1921), "Mēness meitiņa" (1925)).
+1923: "Mūza mājās".
+
+<h6>Poēma</h6>
+
+1910: "Ave sol!".
+
+<h6>Lugas</h6>
+
+1901: "Pusideālists" (grāmatā 1904).
+1905: "Uguns un nakts" (grāmatā 1907).
+1907: "Ģirts Vilks".
+1909: "Zelta zirgs".
+1912: "Indulis un Ārija".
+1914: "Pūt, vējiņi!".
+1915: "Spēlēju, dancoju" (sarakstīta 1915, grāmatā 1919, teātrī 1921).
+1919: dramatiska poēma "Daugava".
+1919: "Jāzeps un viņa brāļi".
+1920: "Krauklītis".
+1923: "Ilja Muromietis".
+1927: "Mīla stiprāka par nāvi".
+1928: "Rīgas ragana".
+
+<h6>Proza</h6>
+
+1928: atmiņu grāmata "Kastaņola".
+
+<h6>Dzejoļu krājumi bērniem</h6>
+
+1920: "Zelta sietiņš".
+1924: "Puķu lodziņš".
+1924: "Vasaras princīši un princītes".
+1924: "Lellīte Lolīte".
+1925: "Putniņš uz zara".
+1928: "Saulīte slimnīcā".
+
+<h6>Lugas bērniem</h6>
+
+1923: "Mušu ķēniņš".
+1928: "Suns un kaķe".
+Literārā līdzdalība citos projektos
+
+1888: satīristisku dzejoļu krājums "Mazie dunduri".
+1889: satīristisks krājums "Apdziedāšanas dziesmas III vispārīgiem latvju dziesmu svētkiem" (publicēts ar pseidonīmu Jāns Jasēnu Plikšis).
+  </article>
+</section>
+
+<footer>
+    <a href="https://www.r1g.edu.lv/"><img src="images/logo.png" alt=""/></a>
+</footer>
+</body>
+</html>
