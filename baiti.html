@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Baiti</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <p>Aprēķināt, cik daudz informācijas var lejuplādēt</p>
+        <input type="number" id="sek"> sekundēs, ja interneta ātrums ir 25Mbps.
+        <p>Atbilde</p>
+        <input type="text" id="rez" readonly>
+        <br>
+        <label><input type="radio" name="unit" value="KiB" checked> KiB</label>
+        <label><input type="radio" name="unit" value="KB" checked> KB</label>
+        
+        <script>
+            function aprekinat() {
+                let sek = document.getElementById("sek").value;
+                
+                if(sek === "") {
+                    document.getElementById("rez").value = "";
+                    return;
+                }
+                
+                sek = Number(sek);
+                let bits = 25*1000000*sek;
+                let bytes = bits / 8;
+                
+                let unit = document.querySelector('input[name="unit"]:checked');
+                
+                if (!unit) return;
+                
+                let result;
+                 if(unit.value === "KB") {
+                     result = bytes/1000;
+                 } else{
+                     result = bytes/1024;
+                 }
+                 document.getElementById("rez").value = result;
+            }
+            
+            let radios = document.getElementByName("unit");
+            radios.forEach(r => r.addEventListener("click", aprekinat));
+            
+            document.getElementById("sek").addEventListener("input", aprekinat);
+        </script>
+    </body>
+</html>

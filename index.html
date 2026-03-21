@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Portfolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="mansStils.css">
+        <style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+
+    </head>
+    <body>
+<div class="site-nav">
+  <span class="site-nav__brand">Datorikas portfolio</span>
+  <nav class="site-nav__menu" aria-label="Galvenā navigācija">
+  <ul class="site-nav__list">
+    <li><a href="#home">Sākums</a></li>
+    <li class="site-nav__dropdown">
+      <button type="button" class="site-nav__trigger" aria-expanded="false" aria-haspopup="true" aria-controls="nav-attelu">
+        Attēlu apstrāde <span class="site-nav__caret" aria-hidden="true"></span>
+      </button>
+      <ul class="site-nav__sub" id="nav-attelu" role="menu">
+        <li role="none"><a href="#rakst" role="menuitem">Rastrgrafika</a></li>
+        <li role="none"><a href="#vekt" role="menuitem">Vektorgrafika</a></li>
+      </ul>
+    </li>
+    <li><a href="#tekst">Teksta apstrāde</a></li>
+    <li><a href="#izklaj">Izklājlapas</a></li>
+    <li><a href="#video">Video</a></li>
+    <li><a href="otrais.html">Divfaktoru autentifikācija</a></li>
+  </ul>
+  </nav>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img src="Images/titulbilde2.jpg" alt="titulbilde" class="hero-img">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+  </div>
+</header>
+
+<!-- Sākuma content -->
+<div class="w3-row w3-padding-64" id="home">
+    </div><div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Par projektu</h1>
+      <h5 class="w3-center">Datorikas projekts</h5>
+      <p class="w3-large">Tā kā šobrīd datorikā apgūstam tēmu par tīmekļa lapām un to veidošanu, kā mūsu gala projektu mums ir jāizveido tīmekļa lapa. Tai ir jābūt porfolio ar visām mums pagaidām apgūtajām tēmām. Lejā var apskatīt visas šīs tēmā ar piemēriem, kā arī ar nelielu aprakstu.</p>
+    </div>
+  <hr class="linija">
+  
+  <!-- Rakstrgrafikas Section -->
+  <div class="w3-row w3-padding-64" id="rakst">
+    </div><div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Rastrgrafika</h1>
+      <h5 class="w3-center">GIMP</h5>
+      <p class="w3-large">Pirmā tēma, ko apguvām, bija rastrgrafika, kurā mācījāmies lietot programmu "GIMP". Izveidojām daudz dažādu bilžu - rediģējām, lai būtu daudz zemeņu, apslēpām atkritumus parka foto attēlā un pat izveidojām kurstīgas bildes un banerus.</p>
+      <div class="vektorgrafika-gallery" role="group" aria-label="Vektorgrafikas piemēri">
+      <img src="Images/degreez_logo_snip.PNG" alt="degreez_logo"/>
+      <img src="Images/divfaktoruBaneris1.gif" alt="baneris"/>
+    </div>
+  <hr class="linija">
+
+  <!-- Vektorgrafikas Section -->
+  <div class="w3-container w3-padding-64" id="vekt">
+    </div><div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Vektorgrafika</h1>
+      <h5 class="w3-center">Inkscape un Tinkercad</h5>
+      <p class="w3-large">Nākamā tēma bija vektorgrafika, kur mēs izmantojām programmu "Inkscape" un "Tinkercad". Programmā "Inkscape" mēs izveidojām plakātu par mūsu individuālu tēmu, kā arī izveidojām kompānijas logo. Vēlāk logo pārlikām programmā "Tinkercad", kur izveidojām 3D modeli ar kuba puzzli ar klasesbiedra izveidotu logo.</p>
+    <div class="vektorgrafika-gallery" role="group" aria-label="Vektorgrafikas piemēri">
+    <img src="Images/divfaktoru_plakats.svg" alt="plakats"/>
+    <img src="Images/logo_varis.svg" alt="logo"/>
+    <img src="Images/gabalins.jpg" alt="kuba_gabalins">
+    <img src="Images/izklatne.jpg" alt="izklatne">
+    </div>
+    </div>
+    <hr class="linija">
+
+  <!-- Video apstrādes Section -->
+  <div class="w3-container w3-padding-64" id="video">
+    </div><div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Video apstrāde</h1>
+      <h5 class="w3-center">Clipchamp</h5>
+      <p class="w3-large">Kamēr veidojām "Tinkercad" kuba projektu, procesu dokumentējām. No nofilmētajiem video bija jāizveido videoklips, aprakstot 3D projekta plānošanu, drukāšanu un salikšanu. Tā kā projekts bija jāveido grupās, varējām katrs iepazīties un sadarboties vairāk.</p>
+      <iframe src="https://eduriga-my.sharepoint.com/personal/aklave2_edu_riga_lv/_layouts/15/embed.aspx?UniqueId=52777bee-df8d-4f22-8eed-ef585222189d&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="kuba_video_projekts.mp4"></iframe>
+    </div>
+    <hr class="linija">
+
+  
+  <!-- Tekstapstrādes Section -->
+  <div class="w3-container w3-padding-64" id="tekst">
+    </div><div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Tekstapstrāde</h1>
+      <h5 class="w3-center">Word</h5>
+      <p class="w3-large">Tālāk mēs mācījāmies programmu "Word". Lai gan biju šo programmu izmantojusi daudzreizēji iepriekš, apgūstot to padziļināti, iemācījos daudz jauna, piemēram, pasta sludināšanu, atsauču ievietošanu, navigāciju, footnote lietošanu un vēl, kā arī bija jāizveido dokuments par individuālo tēmu atbilstoši ZPD noformatēšanas noteikumiem, kas noteikti būs ļoti noderīgi nākamgad.</p>
+      <iframe src="https://eduriga-my.sharepoint.com/personal/aklave2_edu_riga_lv/_layouts/15/Doc.aspx?sourcedoc={7ee4d87d-bb94-4261-ba2a-79783305dba5}&amp;action=embedview" width="476px" height="288px" frameborder="0" title="PowerPoint Viewer">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> document, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>    <br><a href="INF.docx">Word uzdevumu piemērs</a>
+    </div>
+    <hr class="linija">
+
+  
+  <!-- Izklājlapas Section -->
+  <div class="w3-container w3-padding-64" id="izklaj">
+    </div><div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Izklājlapas</h1>
+      <h5 class="w3-center">Excel</h5>
+      <p class="w3-large">Pagaidām pēdējā tēma, ko esam apguvuši, ir programma "Excel". Šeit mācījāmies rīkoties un apstrādāt datus izklājlapās - gan mazas un vienkāršas, gan lielākas un sarežģītākas. Vēl veidojām dažāda veida grafikus un veicām aprēķinus. Šis bija ļoti noderīgi, jo fizikas laboratorijas darba veikšanai izmantojam excel tabulas un grafikus datus apstrādei.</p>
+      <iframe width="402" height="346" frameborder="0" scrolling="no" src="https://eduriga.sharepoint.com/sites/10.edatorika2/_layouts/15/Doc.aspx?sourcedoc={c6e0bf03-e835-4ca5-b108-647830bbc1dd}&action=embedview&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True&edaebf=rslc0"></iframe>
+    <br><a href="aprēķini.xlsx">Aprēķini Excel</a>
+    </div>
+  
+<footer class="site-footer">
+    <p><a href="index.html">Sākums</a> · <a href="dzer.html">Dzer</a> · <a href="dzerdaudz.html">Dzer daudz</a> · <a href="forma.html">Forma</a> · <a href="skola.html">Skola</a> · <a href="baiti.html">Baiti</a></p>
+</footer>
+    </body>
+</html>

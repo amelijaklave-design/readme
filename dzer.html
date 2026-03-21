@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dzēriens</title>
+<link rel="stylesheet" href="mansStils.css">
+<style>
+body {
+  background: linear-gradient(rgba(237, 224, 212, 0.78), rgba(237, 224, 212, 0.78)), url("Images/background.avif") center / cover no-repeat;
+  min-height: 100vh;
+}
+</style>
+</head>
+<body>
+  <div class="site-nav">
+    <span class="site-nav__brand">Datorikas portfolio</span>
+    <nav class="site-nav__menu" aria-label="Galvenā navigācija">
+    <ul class="site-nav__list">
+      <li><a href="index.html">Sākums</a></li>
+      <li class="site-nav__dropdown">
+        <button type="button" class="site-nav__trigger" aria-expanded="false" aria-haspopup="true" aria-controls="nav-attelu">
+          Attēlu apstrāde <span class="site-nav__caret" aria-hidden="true"></span>
+        </button>
+        <ul class="site-nav__sub" id="nav-attelu" role="menu">
+          <li role="none"><a href="#rakst" role="menuitem">Rastrgrafika</a></li>
+          <li role="none"><a href="#vekt" role="menuitem">Vektorgrafika</a></li>
+        </ul>
+      </li>
+      <li><a href="#tekst">Teksta apstrāde</a></li>
+      <li><a href="#izklaj">Izklājlapas</a></li>
+      <li><a href="#video">Video</a></li>
+      <li><a href="otrais.html">Divfaktoru autentifikācija</a></li>
+    </ul>
+    </nav>
+  </div>
+  <main>
+    <p>Izvēlies dzērienu! Cena ir atkarīga no izvēlētā dzēriena.</p>
+    <form>
+      <input type="radio" id="teja" name="drink" value="1.90">
+      <label for="teja">Tēja</label><br>
+      <input type="radio" id="sula" name="drink" value="2.20">
+      <label for="sula">Sula</label><br>
+      <input type="radio" id="kakao" name="drink" value="3.00">
+      <label for="kakao">Karstā šokolāde</label><br>
+      <input type="radio" id="kafija" name="drink" value="3.20">
+      <label for="kafija">Kafija</label>
+      <br>
+    <br>
+      <div id="maksa-wrapper">
+        <input type="button" id="poga" value="Jāmaksā!" onclick="maksa()">
+        <span id="cena"></span>
+      </div>
+    </form>
+    
+    <script>
+    function maksa() {
+        let dz = document.getElementsByName('drink');
+        let cenaSpan = document.getElementById("cena");
+        for (let i = 0; i < dz.length; i++) {
+            if (dz[i].checked) {
+                cenaSpan.textContent = dz[i].value + " €";
+                return;
+            }
+        }
+        cenaSpan.textContent = ""; // ja nav izvēlēts
+    }
+    </script>
+    
+    </main>
+<footer class="site-footer">
+  <p><a href="index.html">Sākums</a> · <a href="dzer.html">Dzer</a> · <a href="dzerdaudz.html">Dzer daudz</a> · <a href="forma.html">Forma</a> · <a href="skola.html">Skola</a> · <a href="baiti.html">Baiti</a></p>
+</footer>
+</body>
+</html>

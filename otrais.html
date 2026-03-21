@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Divfaktoru autentifikācija</title>
+  <link rel="stylesheet" href="mansStils.css">
+  <style>
+    body { font-family: "Times New Roman", Georgia, serif; }
+    .article {
+      max-width: 42rem;
+      margin: 0 auto;
+      padding: 1.5rem 1rem 2.5rem;
+      line-height: 1.55;
+    }
+    .article h1 { font-size: 1.75rem; margin: 0 0 1rem; }
+    .article h2 { font-size: 1.2rem; margin: 1.75rem 0 0.75rem; }
+    .article p { margin: 0 0 0.85rem; text-indent: 1.5rem; }
+    .article p.no-indent,
+    .article h2 + p,
+    .article .lead-in { text-indent: 0; }
+    .article ul { margin: 0.35rem 0 1rem 1.5rem; }
+    .article li { margin-bottom: 0.35rem; }
+    .article .category { font-weight: bold; margin-top: 0.75rem; }
+    .article figure {
+      margin: 1.25rem 0;
+      text-align: center;
+    }
+    .article figure img {
+      max-width: 100%;
+      height: auto;
+    }
+    .article figcaption {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      text-align: left;
+      text-indent: 0;
+    }
+    .article .refs { list-style: decimal; padding-left: 1.5rem; }
+    .article .refs li { margin-bottom: 0.65rem; }
+    .article .refs a { word-break: break-all; }
+  </style>
+</head>
+<body>
+<div class="site-nav">
+  <span class="site-nav__brand">Datorikas portfolio</span>
+  <nav class="site-nav__menu" aria-label="Galvenā navigācija">
+  <ul class="site-nav__list">
+    <li><a href="index.html#home">Sākums</a></li>
+    <li class="site-nav__dropdown">
+      <button type="button" class="site-nav__trigger" aria-expanded="false" aria-haspopup="true" aria-controls="nav-attelu">
+        Attēlu apstrāde <span class="site-nav__caret" aria-hidden="true"></span>
+      </button>
+      <ul class="site-nav__sub" id="nav-attelu" role="menu">
+        <li role="none"><a href="index.html#rakst" role="menuitem">Rastrgrafika</a></li>
+        <li role="none"><a href="index.html#vekt" role="menuitem">Vektorgrafika</a></li>
+      </ul>
+    </li>
+    <li><a href="index.html#tekst">Teksta apstrāde</a></li>
+    <li><a href="index.html#izklaj">Izklājlapas</a></li>
+    <li><a href="index.html#video">Video</a></li>
+    <li><a href="otrais.html" aria-current="page">Divfaktoru autentifikācija</a></li>
+  </ul>
+  </nav>
+</div>
+
+<main class="article">
+  <h1>Divfaktoru autentifikācija</h1>
+
+  <h2 id="definicija">Definīcija</h2>
+  <p>Divfaktoru autentifikācija (2FA) ir drošības mehānisms, kas lietotājiem pirms piekļuves kontam vai sistēmai pieprasa nodrošināt divus dažādus verifikācijas veidus.</p>
+  <p>Parasti šie faktori ietver kaut ko tādu, ko lietotājs zina (paroli), un kaut ko tādu, kas lietotājam ir (viedtālrunī ģenerēts vienreizējs kods), kas pievieno papildu aizsardzības slāni pret nesankcionētu piekļuvi.</p>
+  <p>2FA veidi ietver uz īsziņām balstītus kodus, autentifikācijas lietotnes, aparatūras žetonus (YubiKey), biometriju (piemēram, pirkstu nospiedumu vai sejas atpazīšanu) un uz e-pastu balstītus kodus. (Binance Academy)</p>
+
+  <h2 id="metodes">Divfaktoru autentifikācijas metodes</h2>
+  <p class="no-indent"><strong>Aparatūras marķieri</strong> — Uzņēmumi saviem darbiniekiem var piešķirt aparatūras marķierus atslēgas veidā, kas ģenerē kodus ik pēc dažām sekundēm līdz minūtei. Šī ir viena no vecākajām divfaktoru autentifikācijas formām.</p>
+  <p class="no-indent"><strong>Pārbaude ar īsziņu</strong> — Īsziņas var izmantot kā divfaktoru autentifikācijas formu, kad ziņojums tiek nosūtīts uz uzticamu tālruņa numuru. Lietotājam tiek piedāvāts mijiedarboties ar tekstu vai izmantot vienreizēju kodu, lai verificētu savu identitāti vietnē vai programmā.</p>
+  <p class="no-indent"><strong>Pašpiegādes paziņojumi</strong> — Pašpiegādes divfaktoru autentifikācijas metodēm nav nepieciešama parole. Šāda veida divfaktoru autentifikācija nosūta signālu uz jūsu tālruni, lai apstiprinātu/noraidītu vai akceptētu/noraidītu piekļuvi tīmekļa vietnei vai programmai un verificētu jūsu identitāti.</p>
+  <p class="no-indent"><strong>Balss autentifikācija</strong> — Balss autentifikācija darbojas līdzīgi pašpiegādes paziņojumiem, izņemot to, ka jūsu identitāte tiek apstiprināta, izmantojot automatizāciju. Balss lūgs nospiest taustiņu vai nosaukt savu vārdu, lai jūs identificētu. (Microsoft)</p>
+
+  <h2 id="faktori">Faktoru veidi</h2>
+  <p>Divu faktoru autentifikācijā tiek izmantoti <strong>trīs galvenie faktoru</strong> veidi: <strong>zināšanu faktori, valdījuma faktori un raksturīgie faktori</strong>. Zināšanu faktori pieprasa lietotājam kaut ko zināt, piemēram, paroli vai PIN. Īpašuma faktori nozīmē, ka lietotāja īpašumā ir kaut kas fizisks, piemēram, viedkarte, USB marķieris vai mobilā ierīce. Raksturīgie faktori ir balstīti uz lietotāja unikāliem biometriskajiem raksturlielumiem, piemēram, pirkstu nospiedumiem, balss atpazīšanu vai sejas atpazīšanu.</p>
+  <p>Divu faktoru autentifikācija ir svarīgs drošības pasākums, <strong>kas uzlabo datorsistēmu aizsardzību</strong>, pieprasot lietotājiem nodrošināt divus dažādus identifikācijas veidus. Tas papildus parolēm pievieno papildu drošības līmeni, mazinot riskus, kas saistīti ar nozagtiem vai uzlauztiem akreditācijas datiem. Izmantojot vairākus faktorus, piemēram, zināšanas, īpašumtiesības vai raksturīgās īpašības, divu faktoru autentifikācija ievērojami samazina nesankcionētas piekļuves iespējamību un pastiprina vispārējo drošību. (Eiropas Informācijas tehnoloģiju sertifikācijas institūts)</p>
+
+  <figure>
+    <img src="Images/divfaktori_2fa.jpeg" alt="Ilustrācija: divfaktoru autentifikācijas process" loading="lazy">
+    <figcaption>Attēls. Divfaktoru autentifikācija. Avots: company.inbox.lv</figcaption>
+  </figure>
+
+  <h2 id="lietotnes">Lietotnes ar divfaktoru autentifikāciju</h2>
+  <p class="lead-in">Divfaktoru autentifikācija (2FA) šodien tiek izmantota ļoti plaši — gandrīz visās populārākajās lietotnēs un tīklos, kur ir svarīga drošība. Daži populāri piemēri:</p>
+
+  <p class="category">E-pasts un mākoņpakalpojumi:</p>
+  <ul>
+    <li>Google (Gmail, Google Drive)</li>
+    <li>Microsoft (Outlook, OneDrive, Office 365)</li>
+    <li>Apple ID (iCloud, App Store)</li>
+  </ul>
+
+  <p class="category">Sociālie tīkli:</p>
+  <ul>
+    <li>Facebook</li>
+    <li>Instagram</li>
+    <li>X (Twitter)</li>
+    <li>TikTok</li>
+    <li>LinkedIn</li>
+  </ul>
+
+  <p class="category">Saziņas lietotnes:</p>
+  <ul>
+    <li>WhatsApp</li>
+    <li>Telegram</li>
+    <li>Discord</li>
+  </ul>
+
+  <p class="category">Bankas un finanšu pakalpojumi:</p>
+  <ul>
+    <li>Internetbankas (Swedbank, SEB u.c.)</li>
+    <li>PayPal</li>
+    <li>Revolut, Wise</li>
+    <li>Kriptovalūtu biržas (piem., Binance, Coinbase)</li>
+  </ul>
+
+  <p class="category">Darba un projektu platformas:</p>
+  <ul>
+    <li>Slack</li>
+    <li>Zoom</li>
+  </ul>
+
+  <p>Šis tikai parāda, cik drošs un uzticams ir 2FA autentifikācijas veids. (Ābols)</p>
+
+  <h2 id="problemas">Problēmas</h2>
+  <p>Lai gan divfaktoru autentifikācijas pakalpojums piedāvā daudzas priekšrocības, ir arī potenciālas problēmas. Ja jūs pazaudējat piekļuvi savai autentifikācijas metodei (piemēram, telefonam), tas var sarežģīt piekļuvi jūsu kontam. Turklāt daži cilvēki var uzskatīt šo procesu par neērtu. (Delfi)</p>
+
+  <h2 id="atsauces">Atsauces</h2>
+  <ol class="refs">
+    <li>Ābols, Artis. <cite>Knapi 10% Google lietotāju izmanto divfaktoru autentifikāciju</cite>. 2018-01-23. <a href="https://kursors.lv/2018/01/23/knapi-10-google-lietotaju-izmanto-divfaktoru-autentifikaciju/" target="_blank" rel="noopener noreferrer">kursors.lv</a></li>
+    <li>Binance Academy. <cite>What Is Two-Factor Authentication (2FA)?</cite> 2023-09-18. <a href="https://academy.binance.com/en/articles/what-is-two-factor-authentication-2fa" target="_blank" rel="noopener noreferrer">academy.binance.com</a></li>
+    <li>Delfi. <cite>Solis uz drošību: Viss par divfaktoru autentifikāciju (2FA)</cite>. 2023-11-06. <a href="https://www.delfi.lv/56414296/komercials-saturs/56070860/solis-uz-drosibu-viss-par-divfaktoru-autentifikaciju-2fa" target="_blank" rel="noopener noreferrer">delfi.lv</a></li>
+    <li>Eiropas Informācijas tehnoloģiju sertifikācijas institūts. <cite>Kas ir divu faktoru autentifikācija un kā tā uzlabo drošību?</cite> 2023-08-04. <a href="https://lv.eitca.org/cybersecurity/eitc-is-cssf-computer-systems-security-fundamentals/architecture/security-architecture/examination-review-security-architecture/what-is-two-factor-authentication-and-how-does-it-enhance-security/" target="_blank" rel="noopener noreferrer">lv.eitca.org</a></li>
+    <li>Microsoft. <cite>Kas ir divfaktoru autentifikācija?</cite> <a href="https://www.microsoft.com/lv-lv/security/business/security-101/what-is-two-factor-authentication-2fa" target="_blank" rel="noopener noreferrer">microsoft.com</a></li>
+  </ol>
+</main>
+
+<footer class="site-footer">
+    <p><a href="index.html">Sākums</a> · <a href="dzer.html">Dzer</a> · <a href="dzerdaudz.html">Dzer daudz</a> · <a href="forma.html">Forma</a> · <a href="skola.html">Skola</a> · <a href="baiti.html">Baiti</a></p>
+</footer>
+</body>
+</html>
